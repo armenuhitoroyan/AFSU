@@ -1,0 +1,7 @@
+.Question {
+  background: linear-gradient(270deg, #e0f7fa, #f3e5f5);
+  padding: 20px;
+  border-radius: 15px;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+}

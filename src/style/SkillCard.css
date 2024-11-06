@@ -1,0 +1,44 @@
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  border: 2px solid #6e00ff;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.skill-card {
+  background-color: #f8f9fc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #333;
+}
+
+.skill-card p {
+  color: #666;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.progress-bar {
+  background-color: #e0e4fa;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #6e00ff;
+  border-radius: 5px;
+}
