@@ -1,0 +1,48 @@
+.image-card {
+  position: relative;
+  width: 200px; /* Set width as needed */
+  height: 250px; /* Set height as needed */
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-card .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.image-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 15px;
+}
+
+.image-card:hover .overlay {
+  opacity: 1;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin: 5px 0 0;
+}
