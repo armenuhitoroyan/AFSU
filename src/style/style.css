@@ -1,0 +1,68 @@
+/* Style for header */
+.header {
+  width: 100%;
+  /* position: fixed; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4219dc; /* Dark blue background */
+  padding: 10px 20px;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.subtitle {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.nav-items {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-select {
+  background-color: #4219dc; /* Blue color for dropdown */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.download-button {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background-color: white;
+  color: #4219dc;
+}
+
+.nav-select option {
+  background-color: #4219dc;
+  color: white;
+}
+
+.headerBoxContent {
+  border-bottom-left-radius: 55%; /* Apply radius to the bottom-left corner */
+  border-bottom-right-radius:  95%; /* Apply radius to the bottom-right corner */
+  /* Other styling */
+}

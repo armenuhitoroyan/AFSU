@@ -2,11 +2,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  padding: 20px;
+  
   border: 2px solid #6e00ff;
   border-radius: 15px;
   max-width: 600px;
-  margin: auto;
+  margin: 10px;
 }
 
 .skill-card {
