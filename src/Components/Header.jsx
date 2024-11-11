@@ -1,6 +1,7 @@
 import React from "react";
 import SelectOptionHeader from "./Header/SelectOptionHeader";
 import "../style/style.css";
+import DownloadButton from "./Header/DownloadButton";
 
 const Header = () => {
   return (
@@ -33,9 +34,16 @@ const Header = () => {
         <SelectOptionHeader options={["About", "Pricing Plans", "404"]} />
         <SelectOptionHeader options={["Contact"]} />
       </div>
-      <button className="download-button" style={{ marginLeft: "10px" }}>
+      {/* <button className="download-button" style={{ marginLeft: "10px" }}>
         Download CV
-      </button>
+      </button> */}
+
+      <DownloadButton
+        className="download-button"
+        text="Download CV"
+        href="/files/Armenuhi Toroyan CV.pdf"
+        download="Armenuhi Toroyan CV.pdf"
+      />
     </div>
   );
 };

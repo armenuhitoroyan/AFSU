@@ -1,8 +1,8 @@
 import React from "react";
 import "../style/RoundedButton.css";
 
-const RoundedButton = ({ text, onClick }) => (
-  <button className="rounded-button" onClick={onClick}>
+const RoundedButton = ({ text, onClick, className }) => (
+  <button className={className} onClick={onClick}>
     {text}
   </button>
 );

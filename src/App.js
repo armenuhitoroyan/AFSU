@@ -14,6 +14,7 @@ import "./style/style.css";
 import Header from "./Components/Header";
 import HeaderBox from "./Components/Header/HeaderBox";
 import Pages from "./Components/Pages";
+import DownloadButton from "./Components/Header/DownloadButton";
 // import AnimatedShapes from "./Components/Animations/AnimatedShapes";
 
 function App() {
@@ -27,9 +28,7 @@ function App() {
       <div>
         <HeaderBox />
       </div>
-      {/* <div style={{ marginTop: "100px" }}>
-        
-      </div> */}
+
       <div
         style={{
           display: "flex",
@@ -60,9 +59,11 @@ function App() {
             <div style={{ display: "flex", marginTop: "2%" }}>
               <div style={{ width: "30%", display: "flex" }}>
                 <div style={{ marginLeft: "5%" }}>
-                  <RoundedButton
+                  <DownloadButton
+                    className="rounded-button"
                     text="Download CV"
-                    onClick={alert("Download CV")}
+                    href="/files/Armenuhi Toroyan CV.pdf"
+                    download="Armenuhi Toroyan CV.pdf"
                   />
                 </div>
                 <div>

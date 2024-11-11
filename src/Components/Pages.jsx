@@ -1,14 +1,15 @@
 import facebookImage from "../public/images/facebook.png";
 import instagramImage from "../public/images/instagram.png";
 import twitterImage from "../public/images/twitter.png";
-import ListWebPages from "./Footer/ListWebPages";
+
+import Logos from "./Footer/logos";
 
 const Pages = () => {
   return (
     <div style={{ display: "flex", marginLeft: "15px" }}>
-      <ListWebPages imageName={facebookImage} webName="Facebook" />
-      <ListWebPages imageName={instagramImage} webName="Instagram" />
-      <ListWebPages imageName={twitterImage} webName="Twitter" />
+      <Logos imageName={facebookImage} />
+      <Logos imageName={instagramImage} />
+      <Logos imageName={twitterImage} />
     </div>
   );
 };

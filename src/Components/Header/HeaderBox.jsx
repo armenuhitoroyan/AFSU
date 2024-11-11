@@ -24,6 +24,7 @@ const HeaderBox = () => {
             </p>
             <div style={{ display: "flex", padding: "10px" }}>
               <RoundedButton
+                className="rounded-button"
                 text="Start consulting"
                 onClick={() => alert("Start consulting")}
               />

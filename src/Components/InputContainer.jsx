@@ -29,7 +29,7 @@ const InputContainer = () => {
   };
 
   return (
-    <div className="Question" style={{marginInlineStart: "25px"}}>
+    <div className="Question" style={{ marginInlineStart: "25px" }}>
       <RoundedInput
         placeholder="Your Name *"
         value={name}
@@ -55,6 +55,7 @@ const InputContainer = () => {
       />
       <div style={{ marginTop: "10px" }}></div>
       <RoundedButton
+        className="rounded-button"
         text="Send Message"
         onClick={() => alert("Send Message!")}
       />
