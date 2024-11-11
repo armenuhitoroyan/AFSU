@@ -1,0 +1,11 @@
+/* Yellow Circle  */
+
+.circle {
+  position: absolute;
+  top: 35%;
+  left: 47%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 12px solid yellow;
+}

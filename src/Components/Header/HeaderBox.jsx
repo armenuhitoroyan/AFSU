@@ -3,6 +3,8 @@ import React from "react";
 import "../../style/style.css";
 import RoundedButton from "../RoundedButton";
 import AnimatedShapes from "../Animations/AnimatedShapes";
+import CountFollwers from "../Users/CountFollwers";
+import Circle from "./Circle";
 
 const HeaderBox = () => {
   return (
@@ -31,6 +33,12 @@ const HeaderBox = () => {
             </div>
             <div style={{ marginTop: "-50%", marginInlineStart: "160%" }}>
               <AnimatedShapes />
+            </div>
+            <div>
+              <Circle />
+            </div>
+            <div>
+              <CountFollwers title="10K" text="Happy Satisfied Customer" />
             </div>
           </div>
           <div>

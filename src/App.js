@@ -13,6 +13,7 @@ import Assessment from "./Components/Assessment";
 import "./style/style.css";
 import Header from "./Components/Header";
 import HeaderBox from "./Components/Header/HeaderBox";
+import Pages from "./Components/Pages";
 // import AnimatedShapes from "./Components/Animations/AnimatedShapes";
 
 function App() {
@@ -26,47 +27,84 @@ function App() {
       <div>
         <HeaderBox />
       </div>
-      <div style={{ marginTop: "100px" }}>
-        <h2>About Me</h2>
-      </div>
+      {/* <div style={{ marginTop: "100px" }}>
+        
+      </div> */}
       <div
         style={{
           display: "flex",
           justifyContent: "center",
           width: "99%",
-          backgroundColor: "cyan",
         }}
       >
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <ul
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              listStyleType: "none",
-              padding: 0,
-            }}
-          >
-            {[
-              { data: "Age:", responseData: "29" },
-              { data: "Residence:", responseData: "USA" },
-              { data: "Address:", responseData: "88 Some Street, Some Town" },
-              { data: "E-mail:", responseData: "email@example.com" },
-              { data: "Phone:", responseData: "+0123 123 456 789" },
-              { data: "Freelance:", responseData: "Available" },
-            ].map((item, index) => (
-              <AboutListMenu
-                key={index}
-                data={item.data}
-                responseData={item.responseData}
-                style={{
-                  backgroundColor: index % 2 === 0 ? "white" : "lightgray",
-                  padding: "10px",
-                }}
-              />
-            ))}
-          </ul>
-          <div style={{ marginLeft: "25px", backgroundColor: "yellowgreen" }}>
-            <SkillsGrid />
+        <div>
+          <div>
+            <div style={{ display: "flex", marginTop: "5%" }}>
+              <div style={{ width: "30%" }}>
+                <div>
+                  <h2>About Me</h2>
+                </div>
+                <div>
+                  <p>I like creating a cool design project.</p>
+                </div>
+              </div>
+              <div style={{ width: "30%" }}>
+                <p>
+                  Vestibulum vitae lorim tellus nec dui dictum lorim viverra ac,
+                  place uilm rat Lorse viverra a eros ac, pl rat Lorse ipsom
+                  lorimes aul erdum. erdum. Vestibulum vi rat Lorse ipsom
+                  lorimes aul erdum. erdum.
+                </p>
+              </div>
+            </div>
+            <div style={{ display: "flex", marginTop: "2%" }}>
+              <div style={{ width: "30%", display: "flex" }}>
+                <div style={{ marginLeft: "5%" }}>
+                  <RoundedButton
+                    text="Download CV"
+                    onClick={alert("Download CV")}
+                  />
+                </div>
+                <div>
+                  <Pages />
+                </div>
+              </div>
+              <div style={{ width: "30%" }}>
+                <img src="../../../images/sine.png" alt="sine" />
+              </div>
+            </div>
+          </div>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <ul
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                listStyleType: "none",
+                padding: 0,
+              }}
+            >
+              {[
+                { data: "Age:", responseData: "29" },
+                { data: "Residence:", responseData: "USA" },
+                { data: "Address:", responseData: "88 Some Street, Some Town" },
+                { data: "E-mail:", responseData: "email@example.com" },
+                { data: "Phone:", responseData: "+0123 123 456 789" },
+                { data: "Freelance:", responseData: "Available" },
+              ].map((item, index) => (
+                <AboutListMenu
+                  key={index}
+                  data={item.data}
+                  responseData={item.responseData}
+                  style={{
+                    backgroundColor: index % 2 === 0 ? "white" : "lightgray",
+                    padding: "10px",
+                  }}
+                />
+              ))}
+            </ul>
+            <div style={{ marginLeft: "25px" }}>
+              <SkillsGrid />
+            </div>
           </div>
         </div>
       </div>
