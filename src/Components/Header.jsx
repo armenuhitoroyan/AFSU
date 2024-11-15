@@ -5,16 +5,20 @@ import DownloadButton from "./Header/DownloadButton";
 
 const Header = () => {
   return (
-    <div className="header">
-      <div
-        className="logo"
-        style={{
-          marginRight: "10px",
-        }}
-      >
-        <img src="../../../images/afsu-logo.png" alt="Logo" />
+    <div
+      className="header w-full fixed flex flex-col items-center justify-between md:flex-row"
+      style={{ paddingInline: "8%" }}
+    >
+      <div>
+        <div style={{ width: "90%"}}>
+          <img
+            className="w-16 md:w-32 lg:w-48 flex flex-col items-center justify-between"
+            src="../../../images/afsu-logo.png"
+            alt="Logo"
+          />
+        </div>
       </div>
-      <div className="nav-items">
+      <div className="nav-items w-full fixed flex flex-col items-center justify-between md:flex-row">
         <SelectOptionHeader
           options={[
             "Home 1",
@@ -34,16 +38,15 @@ const Header = () => {
         <SelectOptionHeader options={["About", "Pricing Plans", "404"]} />
         <SelectOptionHeader options={["Contact"]} />
       </div>
-      {/* <button className="download-button" style={{ marginLeft: "10px" }}>
-        Download CV
-      </button> */}
 
-      <DownloadButton
-        className="download-button"
-        text="Download CV"
-        href="/files/Armenuhi Toroyan CV.pdf"
-        download="Armenuhi Toroyan CV.pdf"
-      />
+      <div style={{ width: "250px" }}>
+        <DownloadButton
+          className="download-button"
+          text="Download CV"
+          href="/files/Armenuhi Toroyan CV.pdf"
+          download="Armenuhi Toroyan CV.pdf"
+        />
+      </div>
     </div>
   );
 };

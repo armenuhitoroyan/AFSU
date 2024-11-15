@@ -2,38 +2,48 @@ import React from "react";
 
 import "../../style/style.css";
 import RoundedButton from "../RoundedButton";
-import AnimatedShapes from "../Animations/AnimatedShapes";
+
 import CountFollwers from "../Users/CountFollwers";
 import Circle from "./Circle";
+import Animation from "../Animation/Animation";
 
 const HeaderBox = () => {
   return (
     <div
-      style={{ padding: "10px", backgroundColor: "#4219dc" }}
+      style={{ backgroundColor: "#00005f" }} // #4219dc
       className="headerBoxContent"
     >
       <div>
         <div
-          style={{ display: "flex", justifyContent: "center", height: "450px" }}
+          className="flex justify-between md:flex-row"
+          style={{ height: "450px" }}
         >
-          <div style={{ color: "white", padding: "10px" }}>
-            <h2>HELLO I AM</h2>
-            <h1>Tohidur Hasan</h1>
+          <div className="header-box-container">
+            <h2 className="text-3xl font-bold ">HELLO I AM</h2>
+            <h1 className="text-3xl font-bold ">Tohidur Hasan</h1>
             <p>
               Graphic Designer, HTML Coder, PHP Programmer and Project Manager
             </p>
-            <div style={{ display: "flex", padding: "10px" }}>
+            <div className="flex md:flex-row freelance-available">
               <RoundedButton
                 className="rounded-button"
                 text="Start consulting"
                 onClick={() => alert("Start consulting")}
               />
-              <ul>
-                <li style={{ color: "white" }}>Available for Freelance</li>
+              <ul className="custom-list">
+                <li>Available for Freelance</li>
               </ul>
             </div>
-            <div style={{ marginTop: "-50%", marginInlineStart: "160%" }}>
-              <AnimatedShapes />
+            <div
+              style={{
+                position: "relative", // Add this line
+                marginInlineStart: "150%",
+                zIndex: 3,
+                width: "300px",
+                marginTop: "-450px",
+              }}
+            >
+              <Animation />
             </div>
             <div>
               <Circle />
@@ -44,9 +54,15 @@ const HeaderBox = () => {
           </div>
           <div>
             <img
+              className="w-16 md:w-32 lg:w-48"
               src="../../images/630.png"
               alt="User"
-              style={{ borderRadius: "50%", width: "90%" }}
+              style={{
+                borderRadius: "50%",
+                width: "80%",
+                marginTop: "-200px",
+                marginRight: "170px",
+              }}
             />
           </div>
         </div>

@@ -6,9 +6,13 @@ const Resume = ({ year, info, cardTitle, description }) => {
     <div className="timeline">
       <div className="timeline-item">
         <span className="timeline-year">{year}</span>
-        <h3>{info}</h3>
+        <h3 text-3xl font-bold underline>
+          {info}
+        </h3>
         <div className="timeline-content">
-          <h4>{cardTitle}</h4>
+          <h4 text-3xl font-bold underline>
+            {cardTitle}
+          </h4>
           <p>{description}</p>
         </div>
       </div>

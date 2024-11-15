@@ -1,14 +1,16 @@
+/* Տառատեսակը */
+@font-face {
+  font-family: "Poppins";
+  src: url("../../public/fonts/Poppins-ExtraBold.ttf");
+}
+
 /* Style for header */
 .header {
   width: 100%;
-  /* position: fixed; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #4219dc; /* Dark blue background */
+  background-color: #00005f; /* Dark blue background */
   padding: 10px 20px;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 15%;
+  padding-right: 15%;
   padding-top: 1.5%;
   padding-bottom: 1.5%;
 }
@@ -17,8 +19,6 @@
   color: white;
   font-size: 24px;
   font-weight: bold;
-  display: flex;
-  align-items: center;
 }
 
 .subtitle {
@@ -27,13 +27,12 @@
 }
 
 .nav-items {
-  display: flex;
-  gap: 15px;
-  align-items: center;
+  width: 40%;
+  margin-left: 20%;
 }
 
 .nav-select {
-  background-color: #4219dc; /* Blue color for dropdown */
+  background-color: #00005f; /* Blue color for dropdown */
   color: white;
   padding: 10px;
   border: none;
@@ -57,12 +56,85 @@
 }
 
 .nav-select option {
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+}
+
+.nav-select option :hover {
   background-color: #4219dc;
   color: white;
 }
 
 .headerBoxContent {
-  border-bottom-left-radius: 55%; /* Apply radius to the bottom-left corner */
-  border-bottom-right-radius:  95%; /* Apply radius to the bottom-right corner */
+  border-bottom-left-radius: 115%; /* Apply radius to the bottom-left corner */
+  border-bottom-right-radius: 150%; /* Apply radius to the bottom-right corner */
+  padding-top: 22%; /* Adjust this to match Header's height */
   /* Other styling */
+}
+
+.header-box-container {
+  color: white;
+  margin: 0 auto;
+  padding: 0 auto;
+  margin-inline-start: 7%;
+  margin-block-end: 20%;
+  text-align: left;
+}
+
+.header-box-container h1,
+p {
+  margin-top: 45px;
+  font-family: "Poppins";
+}
+
+.header-box-container h2 {
+  margin-top: -60px;
+}
+
+.header-box-container h1 {
+  font-weight: 900;
+  font-size: 60px;
+}
+
+.header-box-container p {
+  font-weight: normal;
+}
+
+.header-box-container h2 {
+  font-family: "Poppins", sans-serif; /* or any bold font */
+  font-size: 45px; /* Adjust size as needed */
+  font-weight: bold;
+  color: transparent; /* Make the fill transparent */
+  -webkit-text-stroke: 2px white; /* Outline color and thickness */
+  text-align: center;
+  margin-right: 55%;
+}
+
+.freelance-available {
+  margin-top: 50px;
+}
+
+.custom-list {
+  list-style-type: none; /* Remove default bullet */
+  padding-left: 0;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 50px; /* Add space for custom bullet */
+  margin-top: 20px;
+}
+
+.custom-list li::before {
+  content: "•"; /* Unicode for a bullet point */
+  color: #00ce7d; /* Customize the color */
+  font-size: 65px; /* Customize the size */
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 15px;
+  margin-top: -40px;
 }

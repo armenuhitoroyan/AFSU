@@ -6,7 +6,9 @@ const ResumeComponent = ({ firstTitle, secondTitle }) => {
   return (
     <div className="timeline-container">
       <div className="timeline-section">
-        <h2>{firstTitle}</h2>
+        <h2 text-3xl font-bold underline>
+          {firstTitle}
+        </h2>
         <div className="timeline">
           <Resume
             year="2012 to 2014"
@@ -34,7 +36,9 @@ const ResumeComponent = ({ firstTitle, secondTitle }) => {
       </div>
 
       <div className="timeline-section">
-        <h2>{secondTitle}</h2>
+        <h2 text-3xl font-bold underline>
+          {secondTitle}
+        </h2>
         <div className="timeline">
           <Resume
             year="2018 to Present"

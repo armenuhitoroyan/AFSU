@@ -1,0 +1,23 @@
+@keyframes rotateAndResize {
+  0% {
+    width: 300dvh;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    width: 250px;
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    width: 250px;
+    transform: rotate(360deg);
+    opacity: 0; /* Hide the image */
+  }
+}
+
+.shaps-logo {
+  position: relative;
+  animation: rotateAndResize 5s infinite; /* Infinite loop */
+  transition: opacity 0.5s ease-out;
+}

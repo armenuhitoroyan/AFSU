@@ -2,10 +2,10 @@
 
 .circle {
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 47%;
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  border: 12px solid yellow;
+  border: 12px solid #fed73e;
 }

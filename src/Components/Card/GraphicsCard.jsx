@@ -6,8 +6,10 @@ const GraphicsGrid = ({ svg, title, text }) => {
       className="skills-grid"
       style={{ display: "flex", flexDirection: "column" }}
     >
-      <svg className={svg} style={{backgroundColor: "red"}}/>
-      <h3>{title}</h3>
+      <svg className={svg}  />
+      <h3 text-3xl font-bold underline>
+        {title}
+      </h3>
       <p>{text}</p>
     </div>
   );

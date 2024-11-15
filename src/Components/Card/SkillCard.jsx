@@ -4,7 +4,9 @@ import "../../style/SkillCard.css";
 const SkillCard = ({ percentage, skill }) => {
   return (
     <div className="skill-card">
-      <h2>{percentage}%</h2>
+      <h2 text-3xl font-bold underline>
+        {percentage}%
+      </h2>
       <p>{skill}</p>
       <div className="progress-bar">
         <div className="progress" style={{ width: `${percentage}%` }}></div>

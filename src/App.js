@@ -15,19 +15,13 @@ import Header from "./Components/Header";
 import HeaderBox from "./Components/Header/HeaderBox";
 import Pages from "./Components/Pages";
 import DownloadButton from "./Components/Header/DownloadButton";
-// import AnimatedShapes from "./Components/Animations/AnimatedShapes";
+// import Example from "./Components/example/example";
 
 function App() {
   return (
     <div className="App">
-      <div style={{ marginTop: "10px" }}></div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        {/* <Header /> */}
-        <Header />
-      </div>
-      <div>
-        <HeaderBox />
-      </div>
+      <Header />
+      <HeaderBox />
 
       <div
         style={{
@@ -39,9 +33,11 @@ function App() {
         <div>
           <div>
             <div style={{ display: "flex", marginTop: "5%" }}>
-              <div style={{ width: "30%" }}>
+              <div style={{ width: "33%" }}>
                 <div>
-                  <h2>About Me</h2>
+                  <h2 text-3xl font-bold underline>
+                    About Me
+                  </h2>
                 </div>
                 <div>
                   <p>I like creating a cool design project.</p>
@@ -57,8 +53,13 @@ function App() {
               </div>
             </div>
             <div style={{ display: "flex", marginTop: "2%" }}>
-              <div style={{ width: "30%", display: "flex" }}>
-                <div style={{ marginLeft: "5%" }}>
+              <div style={{ width: "40%", display: "flex" }}>
+                <div
+                  style={{
+                    marginLeft: "20%",
+                    width: "250px",
+                  }}
+                >
                   <DownloadButton
                     className="rounded-button"
                     text="Download CV"
@@ -70,7 +71,7 @@ function App() {
                   <Pages />
                 </div>
               </div>
-              <div style={{ width: "30%" }}>
+              <div style={{ width: "40%" }}>
                 <img src="../../../images/sine.png" alt="sine" />
               </div>
             </div>
@@ -109,8 +110,17 @@ function App() {
           </div>
         </div>
       </div>
-      <h4>What We Do</h4>
-      <h2>Our Services</h2>
+
+      {/* Example */}
+      {/* <div style={{ marginLeft: "25px" }}>
+        <Example />
+      </div> */}
+      <h4 text-3xl font-bold underline>
+        What We Do
+      </h4>
+      <h2 text-3xl font-bold underline>
+        Our Services
+      </h2>
       <div
         style={{
           display: "flex",
@@ -184,12 +194,20 @@ function App() {
       </div>
 
       <div style={{ marginTop: "10px" }}></div>
-      <h4>Professional Experience</h4>
-      <h2>My Resume</h2>
+      <h4 text-3xl font-bold underline>
+        Professional Experience
+      </h4>
+      <h2 text-3xl font-bold underline>
+        My Resume
+      </h2>
       <ResumeComponent firstTitle="Education" secondTitle="Experience" />
       <div style={{ marginTop: "10px" }}></div>
-      <h4>Collection of my project</h4>
-      <h2>Work Showcase</h2>
+      <h4 text-3xl font-bold underline>
+        Collection of my project
+      </h4>
+      <h2 text-3xl font-bold underline>
+        Work Showcase
+      </h2>
       <div
         style={{
           display: "flex",
@@ -271,7 +289,9 @@ function App() {
       <div style={{ marginTop: "10px" }}></div>
       <Assessment />
       <div style={{ marginTop: "10px" }}></div>
-      <h2>Recent Articles</h2>
+      <h2 text-3xl font-bold underline>
+        Recent Articles
+      </h2>
       <div
         style={{
           display: "flex",
@@ -305,13 +325,16 @@ function App() {
       <div style={{ marginTop: "10px" }}></div>
 
       <RoundedButton
+        className="rounded-button"
         text="Start Consulting"
         onClick={() => alert("Button clicked!")}
       />
       <div style={{ marginTop: "10px" }}></div>
       <Question />
       <div style={{ marginTop: "10px" }}></div>
-      <h4>What We Do</h4>
+      <h4 text-3xl font-bold underline>
+        What We Do
+      </h4>
       <Footercomponent />
     </div>
   );
