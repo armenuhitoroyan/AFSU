@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import RoundedInput from "./RoundedInput";
 import RoundedButton from "./RoundedButton";
-import RoundedTextArea from "./Form/TextArea";
-import "../style/InputContainer.css";
-import SelectOption from "./Form/SelectOption";
+import RoundedTextArea from "./TextArea";
+import "../../style/InputContainer.css";
+import SelectOption from "./SelectOption";
 
 const InputContainer = () => {
   const [name, setName] = useState("");
@@ -31,17 +31,20 @@ const InputContainer = () => {
   return (
     <div className="Question" style={{ marginInlineStart: "25px" }}>
       <RoundedInput
+        type="text"
         placeholder="Your Name *"
         value={name}
         onChange={handleInputName}
       />
       <div style={{ display: "flex", gap: "10px", margin: "10px" }}>
         <RoundedInput
+          type="email"
           placeholder="Your Email *"
           value={email}
           onChange={handleInputEmail}
         />
         <RoundedInput
+          type="text"
           placeholder="Your Phone *"
           value={phone}
           onChange={handleInputPhone}

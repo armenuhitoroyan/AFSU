@@ -1,6 +1,6 @@
 // ContactCard.js
 import React from "react";
-import "../style/ContactCard.css"; // Import the CSS file
+import "../../style/ContactCard.css"; // Import the CSS file
 
 const ContactCard = ({ IconComponent, title, text }) => {
   return (

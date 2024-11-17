@@ -1,7 +1,7 @@
 import React from "react";
 
 import "../../style/style.css";
-import RoundedButton from "../RoundedButton";
+import RoundedButton from "../Form/RoundedButton";
 
 import CountFollwers from "../Users/CountFollwers";
 import Circle from "./Circle";

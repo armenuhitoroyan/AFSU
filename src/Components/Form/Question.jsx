@@ -1,14 +1,14 @@
 // Question.js
 import React from "react";
 import InputContainer from "./InputContainer"; // Adjust the path as necessary
-import ContactCard from "./ContactCard"; // Adjust the path as necessary
+import ContactCard from "../Card/ContactCard"; // Adjust the path as necessary
 import { HiMiniEnvelope } from "react-icons/hi2";
 import { HiPhone } from "react-icons/hi2";
 import { HiMiniMapPin } from "react-icons/hi2";
 
 const Question = () => {
   return (
-    <div style={{ display: "flex", justifyContent: "center" }}>
+    <div className="flex justify-center md:flex-row">
       <div>
         <div style={{ marginTop: "10%" }}></div>
         <ContactCard

@@ -3,7 +3,7 @@ import "../../style/Animation.css";
 
 const Animation = ({ options }) => (
   <>
-    <img class="shaps-logo" src="../images/shaps.png" alt="Shaps"></img>
+    <img className="shaps-logo" src="../images/shaps.png" alt="Shaps"></img>
   </>
 );
 
