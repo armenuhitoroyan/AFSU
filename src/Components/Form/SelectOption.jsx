@@ -1,22 +1,22 @@
 import React from "react";
-import Option from "./Option";
-import "../../style/RoundedInput.css";
+import "../../style/style.css";
 
-const SelectOption = () => (
+const RoundedSelect = ({ name, value, onChange, options = [], className }) => (
   <select
-    style={{
-      marginTop: "10px",
-      marginBottom: "20px",
-      width: "97%",
-      padding: "10px",
-    }}
+    name={name}
+    value={value}
+    onChange={onChange}
+    className={`${className} w-full px-6 py-3`}
   >
-    <Option option="Select Topic" />
-    <Option option="Select Topic 1" />
-    <Option option="Select Topic 2" />
-    <Option option="Select Topic 3" />
-    <Option option="Select Topic 4" />
+    {options.map((option) => (
+      <option
+        key={option.value}
+        value={option.value}
+        className="r-option border-gray-300"
+      >
+        {option.label}
+      </option>
+    ))}
   </select>
-);
-
-export default SelectOption;
+); 
+export default RoundedSelect;

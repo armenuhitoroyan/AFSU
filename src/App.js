@@ -1,21 +1,18 @@
 import "./App.css";
-import Footercomponent from "./Components/Footer/FooterComponent";
+// import Footercomponent from "./Components/Footer/FooterComponent";
 
-import Header from "./Components/Header/Header";
-import Home3 from "./Components/Homepages/Home3";
-import Home1 from "./Components/Homepages/Home";
+// import Menu from "./Components/Header/Header";
+import Loader from "./Components/Other/Loader";
+// import Home3 from "./Components/Homepages/Home3";
+// import Home1 from "./Components/Homepages/Home";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      {/* Home1 */}
-      <Home1 />
-
-      {/* Home3 */}
-      <Home3 />
-
-      <Footercomponent />
+      {/* <Menu /> */}
+      {/* <Home1 /> */}
+      <Loader />
+      {/* <Footercomponent /> */}
     </div>
   );
 }

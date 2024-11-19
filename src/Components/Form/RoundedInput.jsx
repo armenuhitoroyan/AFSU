@@ -1,18 +1,6 @@
 import React from "react";
 import "../../style/RoundedInput.css";
 
-// const RoundedInput = ({ placeholder, value, onChange, type, name }) => (
-//   <input
-//     type={type}
-//     className="rounded-input"
-//     placeholder={placeholder}
-//     value={value}
-//     onChange={onChange}
-//     name={name}
-//   />
-// );
-
-
 const RoundedInput = ({ type, placeholder, name, value, onChange, error }) => (
   <input
     type={type}

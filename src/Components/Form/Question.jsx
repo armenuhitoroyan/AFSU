@@ -1,10 +1,11 @@
 // Question.js
 import React from "react";
-import InputContainer from "./InputContainer"; // Adjust the path as necessary
+// import InputContainer from "./InputContainer"; // Adjust the path as necessary
 import ContactCard from "../Card/ContactCard"; // Adjust the path as necessary
 import { HiMiniEnvelope } from "react-icons/hi2";
 import { HiPhone } from "react-icons/hi2";
 import { HiMiniMapPin } from "react-icons/hi2";
+import AddUser from "../Users/AddUser";
 
 const Question = () => {
   return (
@@ -29,7 +30,8 @@ const Question = () => {
           text="Block Street No 2101 USA"
         />
       </div>
-      <InputContainer />
+      {/* <InputContainer /> */}
+      <AddUser />
     </div>
   );
 };

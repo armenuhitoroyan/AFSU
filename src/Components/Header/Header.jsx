@@ -1,7 +1,8 @@
 import React from "react";
-import SelectOptionHeader from "./SelectOptionHeader";
+// import SelectOptionHeader from "./SelectOptionHeader";
 import "../../style/style.css";
 import DownloadButton from "./DownloadButton";
+import Menu from "./Menu";
 
 const Header = () => {
   return (
@@ -18,25 +19,9 @@ const Header = () => {
           />
         </div>
       </div>
-      <div className="nav-items w-full fixed flex flex-col items-center justify-between md:flex-row">
-        <SelectOptionHeader
-          options={[
-            "Home 1",
-            "Home 2",
-            "Home 3",
-            "Home 4 (light)",
-            "Home 4 (dark)",
-          ]}
-        />
-        <SelectOptionHeader options={["Services", "Services Details"]} />
-        <SelectOptionHeader
-          options={["Portfolio 1", "Portfolio 2", "Portfolio 3"]}
-        />
-        <SelectOptionHeader
-          options={["Our Blog", "Blog details 1", "Blog details 2"]}
-        />
-        <SelectOptionHeader options={["About", "Pricing Plans", "404"]} />
-        <SelectOptionHeader options={["Contact"]} />
+
+      <div style={{width: "55%"}}>
+        <Menu />
       </div>
 
       <div style={{ width: "250px" }}>
