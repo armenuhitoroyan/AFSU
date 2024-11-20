@@ -1,0 +1,35 @@
+.headerBoxContent {
+  background: linear-gradient(90deg, #f4c7e5, #c6c6d8);
+  border-radius: 0%;
+  color: black;
+}
+
+.header-box-container h2,
+p {
+  color: gray;
+}
+
+.header-box-container h1 {
+  color: black;
+}
+
+
+.header-box-container a {
+  color: #6928e6;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.dot {
+  animation: rotate 10s linear infinite;
+}
+
+/* Keyframes to define the rotation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); /* Starting point */
+  }
+  100% {
+    transform: rotate(360deg); /* Full rotation */
+  }
+}

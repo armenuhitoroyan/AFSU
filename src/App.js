@@ -1,11 +1,10 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import Footercomponent from "./Components/Footer/FooterComponent";
 
-import Menu from "./Components/Header/Header";
 import Loader from "./Components/Other/Loader";
 // import Home3 from "./Components/Homepages/Home3";
-import Home1 from "./Components/Homepages/Home";
+// import Home1 from "./Components/Homepages/Home";
+import Home3 from "./Components/Homepages/Home3";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -27,9 +26,9 @@ function App() {
           <Loader />
         ) : (
           <div>
-            <Menu />
-            <Home1 />
-            <Footercomponent />
+           
+            <Home3 />
+          
           </div>
         )}
       </div>

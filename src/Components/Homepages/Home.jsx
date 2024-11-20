@@ -11,10 +11,13 @@ import SkillsGrid from "../Card/SkillCard";
 import AboutListMenu from "../AboutListMenu";
 import Question from "../Form/Question";
 import Pages from "../Pages";
+import Menu from "../../Components/Header/Header";
+import Footercomponent from "../../Components/Footer/FooterComponent";
 
 const Home1 = () => {
   return (
     <>
+      <Menu />
       <HeaderBox />
       <div
         style={{
@@ -333,6 +336,8 @@ const Home1 = () => {
       />
       <div style={{ marginTop: "10px" }}></div>
       <Question />
+      <div style={{ width: "100%", height: "70px" }}></div>
+      <Footercomponent />
     </>
   );
 };

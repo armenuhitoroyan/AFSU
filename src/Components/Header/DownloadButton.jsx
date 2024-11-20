@@ -1,6 +1,6 @@
 import React from "react";
 
-const DownloadButton = ({ text, href, download, className }) => (
+const DownloadButton = ({ text, href, download, className, color }) => (
   <a
     className={className}
     href={href}
@@ -12,7 +12,9 @@ const DownloadButton = ({ text, href, download, className }) => (
       fontWeight: "bold",
       width: "100%",
       padding: "20px",
-      borderRadius: "50px"
+      borderRadius: "50px",
+      color: color,
+      borderColor: color,
     }}
   >
     <svg

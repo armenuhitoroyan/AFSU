@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "../../style/Menu.css";
 import RoundedSelect from "../Form/SelectOption";
 
-const Menu = ({ onAdd }) => {
+const Menu = ({ onAdd, backgroundImage }) => {
   const [formData, setFormData] = useState({
     home: "",
     service: "",
@@ -88,7 +88,7 @@ const Menu = ({ onAdd }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} style={{ backgroundImage: backgroundImage }}>
       <div className="w-full flex flex-col md:flex-row gap-4">
         <RoundedSelect
           name="home"
@@ -97,6 +97,7 @@ const Menu = ({ onAdd }) => {
           options={homePagesOptions}
           //   error={errors.home}
           className="header-menu"
+          backgroundColor="linear-gradient(90deg, rgba(244, 199, 229, 0.5), rgba(198, 198, 216, 0.5))"
         />
         <RoundedSelect
           name="service"
@@ -104,6 +105,7 @@ const Menu = ({ onAdd }) => {
           onChange={handleChange}
           options={servicesOptions}
           className="header-menu"
+          backgroundColor="linear-gradient(90deg, rgba(244, 199, 229, 0.5), rgba(198, 198, 216, 0.5))"
         />
         <RoundedSelect
           name="portfolio"
@@ -111,6 +113,7 @@ const Menu = ({ onAdd }) => {
           onChange={handleChange}
           options={portfoliosOptions}
           className="header-menu"
+          backgroundColor="linear-gradient(90deg, rgba(244, 199, 229, 0.5), rgba(198, 198, 216, 0.5))"
         />
         <RoundedSelect
           name="blog"
@@ -118,6 +121,7 @@ const Menu = ({ onAdd }) => {
           onChange={handleChange}
           options={blogsOptions}
           className="header-menu"
+          backgroundColor="linear-gradient(90deg, rgba(244, 199, 229, 0.5), rgba(198, 198, 216, 0.5))"
         />
         <RoundedSelect
           name="page"
@@ -125,6 +129,7 @@ const Menu = ({ onAdd }) => {
           onChange={handleChange}
           options={pagesOptions}
           className="header-menu"
+          backgroundColor="linear-gradient(90deg, rgba(244, 199, 229, 0.5), rgba(198, 198, 216, 0.5))"
         />
         <RoundedSelect
           name="contact"
@@ -132,6 +137,7 @@ const Menu = ({ onAdd }) => {
           onChange={handleChange}
           options={contact}
           className="header-menu"
+          backgroundColor="linear-gradient(90deg, rgba(244, 199, 229, 0.5), rgba(198, 198, 216, 0.5))"
         />
       </div>
     </form>
