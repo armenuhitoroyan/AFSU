@@ -7,13 +7,15 @@
 /* Style for header */
 .header {
   width: 100%;
-  background-color: #00005f; 
+  background-color: #00005f;
   /* Dark blue background */
   padding: 10px 20px;
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 1.5%;
   padding-bottom: 1.5%;
+
+  z-index: 4;
 }
 
 .logo {
@@ -33,7 +35,7 @@
 }
 
 .nav-select {
-  background-color: #00005f; 
+  background-color: #00005f;
   /* Blue color for dropdown */
   color: white;
   padding: 10px;
