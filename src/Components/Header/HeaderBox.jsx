@@ -6,23 +6,33 @@ import RoundedButton from "../Form/RoundedButton";
 import CountFollwers from "../Users/CountFollwers";
 import Circle from "./Circle";
 import Animation from "../Animation/Animation";
+import user from "../../images/armt.png";
 
 const HeaderBox = () => {
   return (
     <div
-      style={{ backgroundColor: "#00005f" }} // #4219dc
+      style={{
+        backgroundColor: "#4219dc",
+        borderBottomLeftRadius: "115%",
+        borderBottomRightRadius: "150%",
+      }} // #4219dc
       className="headerBoxContent"
     >
       <div>
         <div
           className="flex justify-between md:flex-row"
-          style={{ height: "450px" }}
+          style={{ height: "450px", color: "white" }}
         >
           <div className="header-box-container">
-            <h2 className="text-3xl font-bold ">HELLO I AM</h2>
-            <h1 className="text-3xl font-bold ">Tohidur Hasan</h1>
-            <p>
-              Graphic Designer, HTML Coder, PHP Programmer and Project Manager
+            <h2 className="text-3xl font-bold " style={{ fontSize: "30px" }}>
+              HELLO I AM
+            </h2>
+            <h1 className="text-3xl font-bold " style={{ fontSize: "40px" }}>
+              Armenuhi Toroyan
+            </h1>
+            <p style={{ fontSize: "20px" }}>
+              {/* Graphic Designer, HTML Coder, PHP Programmer and Project Manager */}
+              Web Developer
             </p>
             <div className="flex md:flex-row freelance-available">
               <RoundedButton
@@ -37,9 +47,9 @@ const HeaderBox = () => {
             <div
               style={{
                 position: "relative", // Add this line
-                marginInlineStart: "150%",
+                marginInlineStart: "160%",
                 zIndex: 3,
-                width: "300px",
+                width: "250px",
                 marginTop: "-450px",
               }}
             >
@@ -55,11 +65,11 @@ const HeaderBox = () => {
           <div>
             <img
               className="w-16 md:w-32 lg:w-48"
-              src="../../images/630.png"
+              src={user}
               alt="User"
               style={{
                 borderRadius: "50%",
-                width: "80%",
+                width: "600px",
                 marginTop: "-200px",
                 marginRight: "170px",
               }}

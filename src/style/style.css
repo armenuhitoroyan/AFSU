@@ -7,15 +7,13 @@
 /* Style for header */
 .header {
   width: 100%;
-  background-color: #00005f;
+  background: linear-gradient(90deg, #00003d, #010060);
   /* Dark blue background */
   padding: 10px 20px;
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 1.5%;
   padding-bottom: 1.5%;
-
-  z-index: 4;
 }
 
 .logo {
@@ -35,8 +33,165 @@
 }
 
 .nav-select {
+  background-color: #00005f; /* Blue color for dropdown */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.download-button {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background-color: white;
+  color: #4219dc;
+}
+
+.nav-select option {
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+}
+
+.nav-select option :hover {
+  background-color: #4219dc;
+  color: white;
+}
+
+.headerBoxContent {
   background-color: #00005f;
-  /* Blue color for dropdown */
+  border-bottom-left-radius: 115%; /* Apply radius to the bottom-left corner */
+  border-bottom-right-radius: 150%; /* Apply radius to the bottom-right corner */
+  padding-top: 22%; /* Adjust this to match Header's height */
+  /* Other styling */
+}
+
+.header-box-container {
+  color: white;
+  margin: 0 auto;
+  padding: 0 auto;
+  margin-inline-start: 7%;
+  margin-block-end: 20%;
+  text-align: left;
+}
+
+.header-box-container h1,
+p {
+  margin-top: 40px;
+  font-family: "Poppins";
+}
+
+.header-box-container h2 {
+  margin-top: -60px;
+}
+
+.header-box-container h1 {
+  font-weight: 800;
+  font-size: 60px;
+}
+
+.header-box-container p {
+  font-weight: normal;
+}
+
+.header-box-container h2 {
+  font-family: "Poppins", sans-serif; /* or any bold font */
+  font-size: 45px; /* Adjust size as needed */
+  font-weight: bold;
+  color: transparent; /* Make the fill transparent */
+  -webkit-text-stroke: 2px white; /* Outline color and thickness */
+  text-align: center;
+  margin-right: 55%;
+}
+
+.freelance-available {
+  margin-top: 50px;
+}
+
+.custom-list {
+  list-style-type: none; /* Remove default bullet */
+  padding-left: 0;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 50px; /* Add space for custom bullet */
+  margin-top: 20px;
+}
+
+.custom-list li::before {
+  content: "•"; /* Unicode for a bullet point */
+  color: #00ce7d; /* Customize the color */
+  font-size: 65px; /* Customize the size */
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 15px;
+  margin-top: -40px;
+}
+
+select {
+  background-color: white; /* Default background color */
+  color: rgb(146, 145, 145);
+}
+
+.r-option {
+  background-color: white; /* Background color for options */
+  color: black;
+  border-radius: 0px;
+  width: 200px;
+  height: 70px;
+}
+
+.r-option:hover {
+  background-color: rgb(0, 0, 95); /* Background color for options */
+  color: white;
+} /* Տառատեսակը */
+@font-face {
+  font-family: "Poppins";
+  src: url("../../public/fonts/Poppins-ExtraBold.ttf");
+}
+
+/* Style for header */
+.header {
+  width: 100%;
+  background-color: #00005f; /* Dark blue background */
+  padding: 10px 20px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.nav-items {
+  width: 40%;
+  margin-left: 20%;
+}
+
+.nav-select {
+  background-color: #00005f; /* Blue color for dropdown */
   color: white;
   padding: 10px;
   border: none;
