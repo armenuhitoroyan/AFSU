@@ -11,13 +11,14 @@ import SkillsGrid from "../Card/SkillCard";
 import AboutListMenu from "../AboutListMenu";
 import Question from "../Form/Question";
 import Pages from "../Pages";
-import Menu from "../../Components/Header/Header";
+// import Menu from "../../Components/Header/Header";
+import Header from "../../Components/Header/Header";
 import Footercomponent from "../../Components/Footer/FooterComponent";
 
 const Home1 = () => {
   return (
     <>
-      <Menu />
+      <Header backgroundColor={`#00005f`} img="../../images/afsu-logo.png" />
       <HeaderBox />
       <div
         style={{

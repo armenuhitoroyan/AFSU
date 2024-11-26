@@ -1,9 +1,7 @@
 /* Yellow Circle  */
 
 .circle {
-  position: absolute;
-  top: 30%;
-  left: 47%;
+  position: relative;
   width: 100px;
   height: 100px;
   border-radius: 50%;

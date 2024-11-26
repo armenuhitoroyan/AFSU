@@ -46,7 +46,7 @@ const HeaderBox = () => {
               <Animation />
             </div>
             <div>
-              <Circle />
+              <Circle left="70%" top="30%" />
             </div>
             <div>
               <CountFollwers title="10K" text="Happy Satisfied Customer" />

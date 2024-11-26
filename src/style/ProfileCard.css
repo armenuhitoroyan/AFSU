@@ -1,0 +1,50 @@
+.card {
+  background-color: #7c4dfc; /* Purple background */
+  width: 22%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-family: Arial, sans-serif;
+  margin-right: 10%;
+  margin-top: 70px;
+}
+
+.image-container {
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+.download-btn {
+  background-color: white;
+  color: #7c4dfc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #eee;
+}

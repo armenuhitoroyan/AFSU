@@ -1,7 +1,4 @@
-import React from "react";
-import "../../style/Circle.css";
-
-const Circle = ({ width, height, borderPx, color }) => {
+const Circle = ({ width, height, borderPx, color, top, left }) => {
   return (
     <div
       className="circle"
@@ -9,7 +6,8 @@ const Circle = ({ width, height, borderPx, color }) => {
         width: width,
         height: height,
         border: `${borderPx} solid ${color}`,
-        position: "static",
+        top: top || "0px",
+        left: left || "0px",
         marginInline: "10px",
       }}
     ></div>

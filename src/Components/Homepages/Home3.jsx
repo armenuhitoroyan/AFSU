@@ -16,11 +16,13 @@ import ProgressCardsContainer from "../Card/ProgressCardsContainer";
 import TitleContainer from "./TitleContainer";
 import Testimonials from "../Other/Testimonials";
 
+import girl from "../../images/girl.png";
+
 const Home3 = () => {
   return (
     <>
       <Header
-        backgroundColor="linear-gradient(90deg, #f4c7e5, #c6c6d8)"
+        backgroundColor={`linear-gradient(90deg, #f4c7e5, #c6c6d8)`}
         img="../../images/black-logo.png"
       />
       <HeaderBoxH3 />
@@ -70,7 +72,7 @@ const Home3 = () => {
             >
               <img
                 style={{ width: "250px", height: "auto" }}
-                src="../../public/images/girl.png"
+                src={girl}
                 alt="Girl"
               />
             </div>

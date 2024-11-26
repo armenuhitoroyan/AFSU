@@ -21,7 +21,7 @@ const Header = ({ backgroundColor, img, color }) => {
       </div>
 
       <div style={{ width: "55%" }}>
-        <Menu backgroundImage="linear-gradient(90deg, #f4c7e5, #c6c6d8)" />
+        <Menu backgroundImage={backgroundColor} />
       </div>
 
       <div style={{ width: "250px" }}>
