@@ -11,16 +11,13 @@ import SkillsGrid from "../Card/SkillCard";
 import AboutListMenu from "../AboutListMenu";
 import Question from "../Form/Question";
 import Pages from "../Pages";
-// import Menu from "../../Components/Header/Header";
-import Header from "../../Components/Header/Header";
-import Footercomponent from "../../Components/Footer/FooterComponent";
-import NavBar from "../Other/NavBar";
-// import HeaderNavbar from "../HeaderNavbar";
 
-const Home1 = () => {
+import Footercomponent from "../../Components/Footer/FooterComponent";
+
+const Home = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
 
       <HeaderBox />
       <div
@@ -346,4 +343,4 @@ const Home1 = () => {
   );
 };
 
-export default Home1;
+export default Home;

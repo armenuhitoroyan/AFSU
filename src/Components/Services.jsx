@@ -1,6 +1,24 @@
 import React from "react";
 const Services = () => {
-  return <h1>Services Articles</h1>;
+  return (
+    <>
+      <div>
+        <h1>Services Articles</h1>
+      </div>
+      <div>
+        <h1>Services Articles</h1>
+      </div>
+      <div>
+        <h1>Services Articles</h1>
+      </div>
+      <div>
+        <h1>Services Articles</h1>
+      </div>
+      <div>
+        <h1>Services Articles</h1>
+      </div>
+    </>
+  );
 };
 
 export default Services;

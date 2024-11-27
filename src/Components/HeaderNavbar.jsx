@@ -1,27 +1,26 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import Services from "./Services";
-import Layout from "./Layout";
-import Portfolio from "./Portfolio";
-import Blogs from "./Blog";
-import NoPage from "./NoPage";
-import Contact from "./Contact";
-import Home1 from "./Homepages/Home";
+import "../style/style.css";
+import DownloadButton from "./Header/DownloadButton";
 
-const HeaderNavbar = () => {
+const Header = ({ backgroundColor, img }) => {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home1 />} />
-        <Route path="services" element={<Services />} />
-        <Route path="portfolio" element={<Portfolio />} />
-        <Route path="blogs" element={<Blogs />} />
-        <Route path="pages" element={<NoPage />} />
-        <Route path="contact" element={<Contact />} />
-      </Route>
-    </Routes>
+    <div
+      className="header w-full fixed flex flex-col items-center justify-between md:flex-row"
+      style={{ paddingInline: "8%", backgroundImage: backgroundColor }}
+    >
+      <div>
+        <img className="w-16 md:w-32 lg:w-48" src={img} alt="Logo" />
+      </div>
+      <div>
+        <DownloadButton
+          className="download-button"
+          text="Download CV"
+          href="/files/Armenuhi Toroyan CV.pdf"
+          download="Armenuhi Toroyan CV.pdf"
+        />
+      </div>
+    </div>
   );
 };
 
-export default HeaderNavbar;
+export default Header;

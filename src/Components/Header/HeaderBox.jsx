@@ -12,9 +12,9 @@ const HeaderBox = () => {
   return (
     <div
       style={{
-        backgroundColor: "#4219dc",
+        background: "linear-gradient(90deg, #00003d, #010060)",
         borderBottomLeftRadius: "115%",
-        borderBottomRightRadius: "150%",
+        borderBottomRightRadius: "170%",
       }} // #4219dc
       className="headerBoxContent"
     >
@@ -56,7 +56,7 @@ const HeaderBox = () => {
               <Animation />
             </div>
             <div>
-              <Circle left="70%" top="30%" />
+              <Circle left="120%" top="-130px" />
             </div>
             <div>
               <CountFollwers title="10K" text="Happy Satisfied Customer" />

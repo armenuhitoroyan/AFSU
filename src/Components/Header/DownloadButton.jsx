@@ -10,7 +10,7 @@ const DownloadButton = ({ text, href, download, className, color }) => (
       textDecoration: "none",
       fontSize: "15px",
       fontWeight: "bold",
-      width: "100%",
+      width: "80%",
       padding: "20px",
       borderRadius: "50px",
       color: color,

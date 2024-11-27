@@ -10,7 +10,7 @@ import Question from "../Form/Question";
 
 import Footercomponent from "../../Components/Footer/FooterComponent";
 import HeaderBoxH3 from "../Header/HeaderBoxH3";
-import Header from "../../Components/Header/Header";
+// import Header from "../../Components/Header/Header";
 import SizeBoxContainer from "../Other/SizeBoxContainer";
 import ProgressCardsContainer from "../Card/ProgressCardsContainer";
 import TitleContainer from "./TitleContainer";
@@ -21,10 +21,10 @@ import girl from "../../images/girl.png";
 const Home3 = () => {
   return (
     <>
-      <Header
+      {/* <Header
         backgroundColor={`linear-gradient(90deg, #f4c7e5, #c6c6d8)`}
         img="../../images/black-logo.png"
-      />
+      /> */}
       <HeaderBoxH3 />
       <div
         style={{
