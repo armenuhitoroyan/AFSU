@@ -17,6 +17,7 @@ const Navbar = () => {
         display: "flex",
         paddingInline: "10%",
         paddingTop: "2%",
+        paddingBottom: "2%",
         width: "100%",
         background: "linear-gradient(90deg, #00003d, #010060)",
       }}

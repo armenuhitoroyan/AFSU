@@ -32,7 +32,7 @@ const HeaderBox = () => {
             </h1>
             <p style={{ fontSize: "20px" }}>
               {/* Graphic Designer, HTML Coder, PHP Programmer and Project Manager */}
-              Web Developer
+              Front-End Developer
             </p>
             <div className="flex md:flex-row freelance-available">
               <RoundedButton
@@ -58,7 +58,7 @@ const HeaderBox = () => {
             <div>
               <Circle left="120%" top="-130px" />
             </div>
-            <div>
+            <div style={{ fontSize: "24px" }}>
               <CountFollwers title="10K" text="Happy Satisfied Customer" />
             </div>
           </div>

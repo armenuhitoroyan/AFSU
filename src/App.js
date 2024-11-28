@@ -34,7 +34,7 @@ function App() {
   // Define background colors for specific routes
   const backgroundColors = {
     "/": "white",
-    "/services": "#123456",
+    // "/services": "#123456",
     "/portfolio": "#654321",
     "/blogs": "#abcdef",
     "/contact": "#fedcba",
@@ -59,6 +59,7 @@ function App() {
               background: currentBackgroundColor,
               // Ensure it covers the viewport
               paddingInline: "20px",
+              paddingBottom: "10px",
             }}
           >
             {/* Conditionally render Navbar */}
