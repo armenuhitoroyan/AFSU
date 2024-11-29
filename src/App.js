@@ -37,7 +37,7 @@ function App() {
     // "/services": "#123456",
     "/portfolio": "#654321",
     "/blogs": "#abcdef",
-    "/contact": "#fedcba",
+    // "/contact": "#fedcba",
     "*": "#333333", // Default for unmatched routes
   };
 

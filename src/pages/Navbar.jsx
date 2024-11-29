@@ -107,7 +107,7 @@ const Navbar = () => {
           <option value="" disabled>
             Contact
           </option>
-          {/* <option value="/contact">Contact</option> */}
+          <option value="/contact">Contact</option>
         </select>
       </div>
 

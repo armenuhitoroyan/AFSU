@@ -1,7 +1,14 @@
 import React from "react";
+import DemoCarousel from "./Other/DemoCarousel";
+import ParticlesContainer from "./Other/ParticlesContainer";
 
 const Contact = () => {
-  return <h1>Contact Me</h1>;
+  return (
+    <>
+      <ParticlesContainer title={`Contact Us`} />
+      <DemoCarousel />
+    </>
+  );
 };
 
 export default Contact;
