@@ -1,12 +1,12 @@
 import React from "react";
 import ListWebPages from "./ListWebPages";
 
-const WebPages = () => {
+const WebPages = ({width}) => {
   return (
     <ul
       className="parent-web-icons flex w-full flex-col justify-center md:flex-row"
       style={{
-        width: "65%",
+        width: `${width}%`,
         border: "5px solid #451ade",
         borderRadius: "70px",
         padding: "10px",

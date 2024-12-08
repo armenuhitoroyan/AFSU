@@ -1,0 +1,77 @@
+.page404 {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #3c1f9f, #7a45c6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 130vh;
+}
+
+.error-page {
+  text-align: center;
+  /* max-width: 600px; */
+  width: 60%;
+  padding: 50px 45px;
+  background: white;
+  border-radius: 30%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #333;
+  margin-bottom: 370px;
+  position: absolute;
+  z-index: 3;
+}
+
+.error-code {
+  font-size: 13rem;
+  margin: 0;
+  color: black;
+}
+
+.error-icon {
+  font-size: 10rem;
+  margin: 20px 0;
+}
+
+.error-message {
+  font-size: 2rem;
+}
+
+.error-description {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+.search-bar button {
+  background: #7a45c6;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.search-bar button:hover {
+  background: #562d9f;
+}
+
+.search-icon {
+  font-size: 1rem;
+}

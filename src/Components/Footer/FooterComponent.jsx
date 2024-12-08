@@ -30,7 +30,7 @@ const Footercomponent = () => {
         className="w-full flex-col flex justify-center md:flex-row"
         style={{ padding: "5%" }}
       >
-        <WebPages />
+        <WebPages width={65} />
       </div>
       <h5 style={{ color: "white" }}>
         Copyright © 2024 AfsuBy Tohidur Hasan, All Rights Reserved

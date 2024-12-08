@@ -1,6 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import DownloadButton from "../Components/Header/DownloadButton";
+import Home3 from "../Components/Homepages/Home3";
+import Home from "../Components/Homepages/Home";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -40,9 +42,15 @@ const Navbar = () => {
             Home
           </option>
           <option value="/home1" path="../Components/Homepages/Home">
-            Home 1
+            <NavLink to="/home1" path={<Home />}>
+              Home 1
+            </NavLink>
           </option>
-          <option value="/home2">Home 2</option>
+          <option value="/home2">
+            <NavLink to="/home2" path={<Home3 />}>
+              Home 2
+            </NavLink>
+          </option>
           <option value="/home3">Home 3</option>
           <option value="/home4-light">Home 4 (light)</option>
           <option value="/home4-dark">Home 4 (dark)</option>

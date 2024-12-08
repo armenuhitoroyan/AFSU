@@ -17,7 +17,7 @@ const Sidebar = ({ logo, color }) => {
       </div>
       <div style={{ height: "70px" }}></div>
       <nav className="nav-icons">
-        <a href="./Home.jsx">
+        <a href="./Home1.jsx">
           {/*   fa-solid fa-bars */}
           <IoHomeOutline style={{ fontSize: "25px", color: { color } }} />
         </a>
