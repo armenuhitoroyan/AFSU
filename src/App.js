@@ -10,9 +10,12 @@ import Homepage4Dark from "./Components/Homepages/Homepage4Dark";
 import Contact from "./Components/Contact";
 import Services from "./Components/Services";
 import Navbar from "./pages/Navbar";
-import Error404 from "./Components/Pages/Blog/Error404";
+import Error404 from "./Components/Pages/Error404";
 import AboutMe from "./Components/Pages/AboutMe";
 import PricingPlans from "./Components/Pages/PricingPlans";
+import PortfolioDetails1 from "./Components/Pages/Portfolio/PortfolioDetails1";
+import PortfolioDetails2 from "./Components/Pages/Portfolio/PortfolioDetails2";
+import PortfolioDetails3 from "./Components/Pages/Portfolio/PortfolioDetails3";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -76,7 +79,18 @@ function App() {
               <Route path="/about" element={<AboutMe />} />
               <Route path="/pricing-plans" element={<PricingPlans />} />
               <Route path="/404" element={<Error404 />} />
-              {/* PricingPlans */}
+              <Route
+                path="/portfolio-details-1"
+                element={<PortfolioDetails1 />}
+              />
+              <Route
+                path="/portfolio-details-2"
+                element={<PortfolioDetails2 />}
+              />
+              <Route
+                path="/portfolio-details-3"
+                element={<PortfolioDetails3 />}
+              />
             </Routes>
           </div>
         )}

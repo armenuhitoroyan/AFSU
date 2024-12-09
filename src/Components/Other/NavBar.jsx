@@ -26,18 +26,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-// import Home1 from "./Homepages/Home";
-// import Home3 from "./Homepages/Home3";
-// import Homepage4Light from "./Homepages/Homepage4Light";
-// import Homepage4Dark from "./Homepages/Homepage4Dark";
-// import NavBar from "./Other/NavBar";
-
-// <Routes>
-//   <Route path="/" element={<NavBar />}>
-//     <Route index element={<Home1 />} />
-//     <Route path="Home3" element={<Home3 />} />
-//     <Route path="Homepage4Light" element={<Homepage4Light />} />
-//     <Route path="Homepage4Dark" element={<Homepage4Dark />} />
-//   </Route>
-// </Routes>

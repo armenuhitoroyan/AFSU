@@ -20,12 +20,8 @@ const Home = () => {
       <AboutComponent />
       {/* ----------------------- */}
 
-      <h4 text-3xl font-bold underline>
-        What We Do
-      </h4>
-      <h2 text-3xl font-bold underline>
-        Our Services
-      </h2>
+      <h4 className="text-3xl font-bold underline">What We Do</h4>
+      <h2 className="text-3xl font-bold underline">Our Services</h2>
       <div
         style={{
           display: "flex",

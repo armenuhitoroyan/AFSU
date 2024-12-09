@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import "../../../style/Error404.css";
+import "../../style/Error404.css";
 import { PiSmileyXEyesFill } from "react-icons/pi";
 import { BiSearch } from "react-icons/bi";
 
-import WebPages from "../../Footer/WebPages";
+import WebPages from "../Footer/WebPages";
 
 const Error404 = () => {
   useEffect(() => {
