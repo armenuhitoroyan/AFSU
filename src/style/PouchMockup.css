@@ -1,0 +1,13 @@
+.pouch-container {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border-radius: 15px;
+}
+
+.pouch-image {
+  transition: transform 0.5s ease;
+}
+
+.pouch-container:hover .pouch-image {
+  transform: scale(1.2) rotate(10deg); /* Adds rotation to the zoom effect */
+  cursor: pointer;
+}
