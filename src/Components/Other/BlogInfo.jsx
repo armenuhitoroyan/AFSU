@@ -1,7 +1,7 @@
 import React from "react";
 import RoundedButton from "../Form/RoundedButton";
 
-const BlogInfo = ({ img, profileImg, date, author, title, text }) => {
+const BlogInfo = ({ img, profileImg, date, author, title, text, h2Size, pSize }) => {
   return (
     <>
       <div>
@@ -31,8 +31,8 @@ const BlogInfo = ({ img, profileImg, date, author, title, text }) => {
         </div>
 
         <div style={{ textAlign: "start" }}>
-          <h2 style={{ fontSize: "45px", fontWeight: "bold" }}>{title}</h2>
-          <p style={{ color: "lightgray" }}>{text}</p>
+          <h2 style={{ fontSize: {h2Size}, fontWeight: "bold" }}>{title}</h2>
+          <p style={{ color: "lightgray", fontSize: {pSize} }}>{text}</p>
           <div style={{ width: "150px" }}>
             <RoundedButton
               text={`Select Now`}

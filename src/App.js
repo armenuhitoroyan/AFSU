@@ -17,6 +17,27 @@ import PortfolioDetails1 from "./Components/Pages/Portfolio/PortfolioDetails1";
 import PortfolioDetails2 from "./Components/Pages/Portfolio/PortfolioDetails2";
 import PortfolioDetails3 from "./Components/Pages/Portfolio/PortfolioDetails3";
 import OurBlog from "./Components/Pages/Blog/OurBlog";
+import Blog1 from "./Components/Pages/Blog/Blog1";
+
+function useOnlineStatus() {
+  const [isOnline, setIsOnline] = useState(navigator.onLine);
+
+  useEffect(() => {
+    const handleOnline = () => setIsOnline(true);
+    const handleOffline = () => setIsOnline(false);
+
+    window.addEventListener("online", handleOnline);
+    window.addEventListener("offline", handleOffline);
+
+    // Cleanup listeners on unmount
+    return () => {
+      window.removeEventListener("online", handleOnline);
+      window.removeEventListener("offline", handleOffline);
+    };
+  }, []);
+
+  return isOnline;
+}
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -25,10 +46,12 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
+
+  const isOnline = useOnlineStatus();
 
   // Define background colors for specific routes
   const backgroundColors = {
@@ -48,7 +71,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        {loading ? (
+        {!isOnline || loading ? (
           <Loader />
         ) : (
           <div
@@ -92,10 +115,8 @@ function App() {
                 path="/portfolio-details-3"
                 element={<PortfolioDetails3 />}
               />
-              <Route
-                path="/our-blog"
-                element={<OurBlog />}
-              />
+              <Route path="/our-blog" element={<OurBlog />} />
+              <Route path="/blog-details1" element={<Blog1 />} />
             </Routes>
           </div>
         )}

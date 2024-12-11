@@ -38,6 +38,7 @@ const OurBlog = () => {
             Brownie I love chocolate bar. Cake I love liquorice n’t act so
             surprised, Your Highnes You weren’t on any mercy mison this time to
             this shp before me.`}
+            h2Size={`45px`}
           />
           <div style={{ marginTop: "50px" }}>
             <BlogInfo
@@ -46,6 +47,7 @@ const OurBlog = () => {
               date={`December 5, 2023`}
               author={`Willimes Marker`}
               title={`Professionals with a Global Mindset`}
+              h2Size={`45px`}
               text={`ipsum dolor sit amet soufflé. I love liquorice oat cake biscuit
             tiramisu jelly danish Caramels its chorice sw eet roll tart. Jelly
             fruitcake tart caramels marzipan. Brownie I love chocolate that bar
@@ -65,6 +67,7 @@ const OurBlog = () => {
               date={`December 5, 2023`}
               author={`Willimes Marker`}
               title={`Professionals with a Global Mindset`}
+              h2Size={`45px`}
               text={`ipsum dolor sit amet soufflé. I love liquorice oat cake biscuit
             tiramisu jelly danish Caramels its chorice sw eet roll tart. Jelly
             fruitcake tart caramels marzipan. Brownie I love chocolate that bar
@@ -84,6 +87,7 @@ const OurBlog = () => {
               date={`December 5, 2023`}
               author={`Willimes Marker`}
               title={`Professionals with a Global Mindset`}
+              h2Size={`45px`}
               text={`ipsum dolor sit amet soufflé. I love liquorice oat cake biscuit
             tiramisu jelly danish Caramels its chorice sw eet roll tart. Jelly
             fruitcake tart caramels marzipan. Brownie I love chocolate that bar
@@ -103,6 +107,7 @@ const OurBlog = () => {
               date={`December 5, 2023`}
               author={`Willimes Marker`}
               title={`Professionals with a Global Mindset`}
+              h2Size={`45px`}
               text={`ipsum dolor sit amet soufflé. I love liquorice oat cake biscuit
             tiramisu jelly danish Caramels its chorice sw eet roll tart. Jelly
             fruitcake tart caramels marzipan. Brownie I love chocolate that bar
