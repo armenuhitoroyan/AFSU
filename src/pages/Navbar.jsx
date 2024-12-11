@@ -88,7 +88,7 @@ const Navbar = () => {
           <option value="" disabled>
             Blog
           </option>
-          <option value="/blog">Our Blog</option>
+          <option value="/our-blog">Our Blog</option>
           <option value="/blog-details1">Blog Details 1</option>
           <option value="/blog-details2">Blog Details 2</option>
         </select>

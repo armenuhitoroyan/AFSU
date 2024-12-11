@@ -16,6 +16,7 @@ import PricingPlans from "./Components/Pages/PricingPlans";
 import PortfolioDetails1 from "./Components/Pages/Portfolio/PortfolioDetails1";
 import PortfolioDetails2 from "./Components/Pages/Portfolio/PortfolioDetails2";
 import PortfolioDetails3 from "./Components/Pages/Portfolio/PortfolioDetails3";
+import OurBlog from "./Components/Pages/Blog/OurBlog";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -90,6 +91,10 @@ function App() {
               <Route
                 path="/portfolio-details-3"
                 element={<PortfolioDetails3 />}
+              />
+              <Route
+                path="/our-blog"
+                element={<OurBlog />}
               />
             </Routes>
           </div>

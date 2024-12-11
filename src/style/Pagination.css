@@ -1,0 +1,37 @@
+.pagination-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.pagination-button {
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #6c5ce7;
+  color: white;
+}
+
+.pagination-button.hovered {
+  background-color: white;
+  color: #6c5ce7;
+  border: 2px solid #6c5ce7;
+}
+
+.pagination-number {
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.pagination-number:hover {
+  color: #6c5ce7;
+  font-weight: bold;
+}
+
+.dots {
+  font-size: 18px;
+}
