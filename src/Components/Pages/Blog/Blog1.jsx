@@ -9,10 +9,12 @@ import RoundedInput from "../../Form/RoundedInput";
 import RoundedButton from "../../Form/RoundedButton";
 import PouchMockup from "../../Other/PouchMockup";
 
+import image from "../../../images/bgimg.jpg";
+
 const Blog1 = () => {
   return (
     <>
-      <ParticlesContainer title="Our Blog" />
+      <ParticlesContainer title="Our Blog" img={image} />
       <div
         style={{
           width: "97%",
@@ -79,6 +81,7 @@ const Blog1 = () => {
               </div>
             </div>
           </div>
+          {/* ------------ */}
           <p
             style={{
               color: "lightgray",
@@ -175,7 +178,67 @@ const Blog1 = () => {
                 alt="Image not found"
               />
             </div>
-          </div>  
+          </div>
+          <p
+            style={{
+              color: "lightgray",
+              fontSize: "17px",
+              fontWeight: "normal",
+              textAlign: "start",
+            }}
+          >
+            Tighten your grip, Tarkin, the more star systems will slip through
+            your fingers.Still, got a lot of spirit what do you think? What!? I
+            don’t know what you’re talking about. I am a member of the
+            Imperidiplomatic mission to Alderaan good is a reward if you aint
+            tas around to use it Besides, attackin station ain’t my idea of cou
+            rage. It’s more like suicide.
+          </p>
+
+          {/* --------- */}
+
+          <div
+            style={{
+              color: "lightgray",
+              fontSize: "17px",
+              fontWeight: "normal",
+              textAlign: "start",
+              display: "flex",
+            }}
+          >
+            <div style={{ width: "70%" }}>
+              <p>
+                ipsum dolor sit amet soufflé. I love liquorice oat cake biscuit
+                tiramisu jelly danish Caramels its chorice sw eet roll tart.
+                Jelly fruitcake tart caramels marzipan. Brownie I love chocolate
+                that bar sesliquorice. I love to otsie roll dragée bonbon
+                croisnt. Chupa chups lo ream sesame snaps jelly tiramiipsum
+                dolor sit am et souffl liquorice oat cake biscuit jesms tiramisu
+                jelly dash Caramels chocolatsweet roll tart. Jelly-o fruitc ake
+                tart caramels marzipan.
+              </p>
+            </div>
+            <div style={{ marginLeft: "20px", width: "30%" }}>
+              <img
+                style={{ borderRadius: "20px" }}
+                src={`https://afsu.tohidur.com/img/blog-6.jpg`}
+                alt="Profile Page 1"
+              />
+            </div>
+          </div>
+          <p
+            style={{
+              color: "lightgray",
+              fontSize: "17px",
+              fontWeight: "normal",
+              textAlign: "start",
+            }}
+          >
+            you’re talking about. I am a member of the Imperidiplomatic mission
+            to Alderaan good is a reward if you aint tas around to use it
+            Besides, attackin station ain’t my idea of courage. It’s more like
+            suicide.
+          </p>
         </div>
 
         {/* Part 2 */}

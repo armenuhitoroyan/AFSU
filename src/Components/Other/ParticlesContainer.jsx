@@ -1,9 +1,7 @@
 import React, { useEffect } from "react";
-import bgImage from "../../images/bgimg.jpg";
+// import bgImage from "../../images/bgimg.jpg";
 
-
-
-const ParticlesContainer = ({ title }) => {
+const ParticlesContainer = ({ title, img }) => {
   useEffect(() => {
     window.particlesJS("particles-container", {
       particles: {
@@ -22,7 +20,7 @@ const ParticlesContainer = ({ title }) => {
         style={{
           width: "100%",
           height: "326px",
-          backgroundImage: `url(${bgImage})`,
+          backgroundImage: `url(${img})`,
           fontSize: "80px",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",

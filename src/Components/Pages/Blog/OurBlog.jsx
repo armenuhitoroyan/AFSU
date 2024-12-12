@@ -8,11 +8,12 @@ import BlogNews from "../../Other/BlogNews";
 import CategoryLink from "../../Form/CategoryLink";
 import RoundedInput from "../../Form/RoundedInput";
 import RoundedButton from "../../Form/RoundedButton";
+import image from "../../../images/bgimg.jpg";
 
 const OurBlog = () => {
   return (
     <>
-      <ParticlesContainer title="Our Blog" />
+      <ParticlesContainer title="Our Blog" img={image} />
       <div
         style={{
           width: "97%",

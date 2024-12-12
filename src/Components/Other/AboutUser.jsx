@@ -9,18 +9,20 @@ const AboutUser = ({ color }) => {
       style={{
         width: "36%",
         marginTop: "200px",
-        color: { color },
+        color: color, // Apply color dynamically
         marginLeft: "15%",
       }}
       className="header-box-container"
     >
       <h2
-        className="text-3xl font-bold "
-        style={{ WebkitTextStrokeColor: { color } }}
+        className="text-3xl font-bold"
+        style={{
+          WebkitTextStroke: `1px ${color}`, // Dynamic stroke color
+        }}
       >
         HELLO I AM
       </h2>
-      <h1 className="text-3xl font-bold ">Tohidur Hasan</h1>
+      <h1 className="text-3xl font-bold">Tohidur Hasan</h1>
       <p>Graphic Designer, HTML Coder, PHP Programmer and Project Manager</p>
       <div className="flex md:flex-row freelance-available">
         <RoundedButton

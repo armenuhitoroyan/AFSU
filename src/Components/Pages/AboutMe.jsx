@@ -4,11 +4,12 @@ import Footercomponent from "../Footer/FooterComponent";
 import AboutPage from "../AboutComponent";
 import ResumeComponent from "../Resume/ResumeComponent";
 import DemoCarousel from "../Other/DemoCarousel";
+import image from "../../images/bgimg.jpg";
 
 const AboutMe = () => {
   return (
     <>
-      <ParticlesContainer title="About Us" />
+      <ParticlesContainer title="About Us" img={image} />
       <div style={{ width: "100%", height: "100%" }}>
         <AboutPage />
         <div style={{ marginTop: "10px" }}></div>

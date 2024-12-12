@@ -4,11 +4,12 @@ import Footercomponent from "../../Footer/FooterComponent";
 import PreviewNextComponent from "../../Other/PreviewNextComponent";
 import PouchMockup from "../../Other/PouchMockup";
 import PortfolioDetails from "./PortfolioDetails";
+import image from "../../../images/bgimg.jpg";
 
 const PortfolioDetails3 = () => {
   return (
     <>
-      <ParticlesContainer title="Portfolio Details" />
+      <ParticlesContainer title="Portfolio Details" img={image} />
       <div style={{ width: "90%", margin: "0 auto" }}>
         <img
           style={{ borderRadius: "20px", marginTop: "70px" }}

@@ -46,7 +46,7 @@ const Navbar = () => {
             {/* <NavLink to="/home1" path={<Home />}> */}
             Home 1{/* </NavLink> */}
           </option>
-          <option value="/home2">
+          <option value="/index-2">
             {/* <NavLink to="/home2" path={<Home3 />}> */}
             Home 2{/* </NavLink> */}
           </option>

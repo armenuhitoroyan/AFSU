@@ -5,6 +5,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Loader from "./Components/Other/Loader";
 import Home1 from "./Components/Homepages/Home";
 import Home3 from "./Components/Homepages/Home3";
+import Home2 from "./Components/Homepages/Home2";
 import Homepage4Light from "./Components/Homepages/Homepage4Light";
 import Homepage4Dark from "./Components/Homepages/Homepage4Dark";
 import Contact from "./Components/Contact";
@@ -18,6 +19,8 @@ import PortfolioDetails2 from "./Components/Pages/Portfolio/PortfolioDetails2";
 import PortfolioDetails3 from "./Components/Pages/Portfolio/PortfolioDetails3";
 import OurBlog from "./Components/Pages/Blog/OurBlog";
 import Blog1 from "./Components/Pages/Blog/Blog1";
+import Blog2 from "./Components/Pages/Blog/Blog2";
+import ServicesDetail from "./Components/Pages/ServicesDetail";
 
 function useOnlineStatus() {
   const [isOnline, setIsOnline] = useState(navigator.onLine);
@@ -96,9 +99,11 @@ function App() {
               <Route index element={<Home1 />} />
               <Route path="/home1" element={<Home1 />} />
               <Route path="/home3" element={<Home3 />} />
+              <Route path="/index-2" element={<Home2 />} />
               <Route path="/home4-light" element={<Homepage4Light />} />
               <Route path="/home4-dark" element={<Homepage4Dark />} />
               <Route path="/services" element={<Services />} />
+              <Route path="/services-details" element={<ServicesDetail />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/about" element={<AboutMe />} />
               <Route path="/pricing-plans" element={<PricingPlans />} />
@@ -117,6 +122,7 @@ function App() {
               />
               <Route path="/our-blog" element={<OurBlog />} />
               <Route path="/blog-details1" element={<Blog1 />} />
+              <Route path="/blog-details2" element={<Blog2 />} />
             </Routes>
           </div>
         )}

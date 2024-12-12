@@ -2,7 +2,10 @@ import React from "react";
 
 const CirclePart = ({ borderColor }) => {
   return (
-    <div className="circle-part" style={{ borderTopColor: borderColor }}></div>
+    <div
+      className="circle-part"
+      style={{ borderTopColor: borderColor }}
+    ></div>
   );
 };
 

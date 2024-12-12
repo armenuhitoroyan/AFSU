@@ -6,7 +6,9 @@ import CirclePart from "./CirclePart";
 const Loader = () => {
   return (
     <div className="loader-container">
-      <CirclePart borderColor="#ffffff" />
+      <div style={{ marginLeft: "10px" }}>
+        <CirclePart borderColor="#ffffff" />
+      </div>
       <TextLoader text="loading..." />
     </div>
   );

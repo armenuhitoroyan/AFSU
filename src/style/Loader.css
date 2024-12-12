@@ -12,7 +12,7 @@
   width: 200px; /* Size of the circular border */
   height: 200px;
   border-radius: 50%;
-  border: 6px solid transparent;
+  border: 8px solid transparent;
   border-top-color: #ffffff; /* White color for one segment of the circle */
   border-right-color: #6928e6; /* Purple color for another segment */
   border-bottom-color: #973af1; /* Light purple color for another segment */

@@ -6,11 +6,12 @@ import PortfolioDetails from "./PortfolioDetails";
 import PouchMockup from "../../Other/PouchMockup";
 import FeatureContainer from "../../Other/FeatureContainer";
 import PreviewNextComponent from "../../Other/PreviewNextComponent";
+import image from "../../../images/bgimg.jpg";
 
 const PortfolioDetails1 = () => {
   return (
     <>
-      <ParticlesContainer title="Portfolio Details" />
+      <ParticlesContainer title="Portfolio Details" img={image} />
       <div
         style={{
           width: "100%",

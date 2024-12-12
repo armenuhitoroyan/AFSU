@@ -4,11 +4,12 @@ import Footercomponent from "../Footer/FooterComponent";
 import PricingCard from "../Card/PricingCard";
 import AssignmentsPackages from "../Other/AssignmentsPackages";
 import RoundedButton from "../Form/RoundedButton";
+import image from "../../images/bgimg.jpg";
 
 const PricingPlans = () => {
   return (
     <>
-      <ParticlesContainer title="Pricing Plans" />
+      <ParticlesContainer title="Pricing Plans" img={image} />
       <div
         style={{
           width: "100%",
