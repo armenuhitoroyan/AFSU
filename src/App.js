@@ -21,30 +21,15 @@ import OurBlog from "./Components/Pages/Blog/OurBlog";
 import Blog1 from "./Components/Pages/Blog/Blog1";
 import Blog2 from "./Components/Pages/Blog/Blog2";
 import ServicesDetail from "./Components/Pages/ServicesDetail";
-
-function useOnlineStatus() {
-  const [isOnline, setIsOnline] = useState(navigator.onLine);
-
-  useEffect(() => {
-    const handleOnline = () => setIsOnline(true);
-    const handleOffline = () => setIsOnline(false);
-
-    window.addEventListener("online", handleOnline);
-    window.addEventListener("offline", handleOffline);
-
-    // Cleanup listeners on unmount
-    return () => {
-      window.removeEventListener("online", handleOnline);
-      window.removeEventListener("offline", handleOffline);
-    };
-  }, []);
-
-  return isOnline;
-}
+import { useWebSocket } from "./Hooks/useWebSocket";
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const location = useLocation(); // Get the current route
+  const location = useLocation();
+
+  const { isConnected, isOnline, connectionError } = useWebSocket(
+    "http://localhost:4000"
+  );
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -53,8 +38,6 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
-
-  const isOnline = useOnlineStatus();
 
   // Define background colors for specific routes
   const backgroundColors = {
@@ -71,10 +54,13 @@ function App() {
   const hideNavbar =
     location.pathname === "/home4-light" || location.pathname === "/home4-dark";
 
+  const showLoader =
+    loading || !isOnline || (isOnline && !isConnected && connectionError);
+
   return (
     <div className="App">
       <div>
-        {!isOnline || loading ? (
+        {loading ? ( // loading showLoader
           <Loader />
         ) : (
           <div
