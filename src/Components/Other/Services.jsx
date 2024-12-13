@@ -53,7 +53,9 @@ const OurServices = () => {
                 borderRadius: "15px",
                 transform: "rotate(90deg)",
               }}
-            ></div>
+            >
+             
+            </div>
             <div
               style={{
                 width: "120px",
