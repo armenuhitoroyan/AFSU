@@ -3,6 +3,11 @@ import ParticlesContainer from "../../Other/ParticlesContainer";
 import image from "../../../images/singing.jpg";
 import BlogInfo from "../../Other/BlogInfo";
 import PouchMockup from "../../Other/PouchMockup";
+import PostedPageComponent from "../../Other/PostedPageComponent";
+import PostCard from "../../Card/Postcard";
+import AboutAuthorComponent from "../../Other/AboutAuthorComponent";
+import CommentComponent from "../../Other/Commentcomponent";
+import AddUser from "../../Users/AddUser";
 
 const Blog2 = () => {
   return (
@@ -242,6 +247,76 @@ const Blog2 = () => {
               it Besides, attackin station ain’t my idea of courage. It’s more
               like suicide.
             </p>
+          </div>
+          <PostedPageComponent />
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              marginTop: "50px",
+            }}
+          >
+            <div style={{ width: "50%" }}>
+              <PostCard
+                text={`Whether you get knocked...`}
+                content={`Previews Post`}
+                textAlign={`start`}
+              />
+            </div>
+            <div style={{ width: "50%", marginLeft: "20px" }}>
+              <PostCard
+                text={`It’s whether you get up...`}
+                content={`Next Post`}
+                textAlign={`end`}
+              />
+            </div>
+          </div>
+          <div style={{ marginTop: "50px" }}>
+            <AboutAuthorComponent
+              img={`https://afsu.tohidur.com/img/blog-7.jpg`}
+              name={`About Author`}
+              role={`Graphic Designer`}
+              aboutAuthor={`Lorem ipsum dolor sit amet, consectetur adipis Vivamus sceler neque in Nam vitae urnasodales neque in faucibus.`}
+            />
+          </div>
+
+          <h2
+            style={{
+              marginBottom: "20px",
+              marginTop: "20px",
+              textAlign: "start",
+            }}
+          >
+            02 Comments
+          </h2>
+
+          <div style={{ marginTop: "50px" }}>
+            <CommentComponent
+              img={`https://afsu.tohidur.com/img/comment-1.jpg`}
+              name={`Nolwar Disoza`}
+              date={`10 months ago`}
+              aboutAuthor={`Lorem ipsum dolor sit amet, consectetur adipis Vivamus sceler neque in Nam vitae urnasodales neque in faucibus.`}
+            />
+          </div>
+          <div style={{ marginTop: "50px" }}>
+            <CommentComponent
+              img={`https://afsu.tohidur.com/img/comment-2.jpg`}
+              name={`Thomas Walkar`}
+              date={`10 months ago`}
+              aboutAuthor={`Lorem ipsum dolor sit amet, consectetur adipis Vivamus sceler neque in Nam vitae urnasodales neque in faucibus.`}
+            />
+          </div>
+          <h2
+            style={{
+              marginBottom: "20px",
+              marginTop: "20px",
+              textAlign: "start",
+            }}
+          >
+            Leave a Comment
+          </h2>
+          <div style={{ marginTop: "50px" }}>
+            <AddUser />
           </div>
         </div>
       </div>

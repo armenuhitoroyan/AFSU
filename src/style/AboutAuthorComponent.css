@@ -1,0 +1,27 @@
+.about-author {
+  border: 3px solid #6928e6;
+  border-radius: 20px;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(90deg, #4219dc, #973af1);
+  color: white;
+  text-align: start;
+}
+
+span {
+  color: white;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 18px;
+  margin-top: 20px;
+}
